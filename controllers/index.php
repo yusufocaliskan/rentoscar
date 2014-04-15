@@ -52,7 +52,7 @@ class index extends controller
         $this->getLocations = $this->carsModel->getAllLocations();
 
         #Sayfayı çağır.
-        parent::theme('index/home', 'Home Page','','',array('cache'=>true));
+        parent::theme('index/home', 'Home Page','','',array('cache'=>false));
 
     }
 

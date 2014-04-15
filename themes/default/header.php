@@ -24,13 +24,32 @@
 </head>
     <body class=" <?php if(router::getController() == 'index' OR router::getController() == '') echo 'center-slider one-column middle-sidebar'; else echo 'page page-two-column'; ?>">
         <div id="conteiner">
+
+            <div id="header_top">
+                <div id="main">
+                    <ul class="fl">
+                        <li><a href="http://test.navion.com.tr/rentoscar/page/read/term-conditions">Term & Conditions</a></li>
+                        <li class="sp">  </li>
+                        <li><a href="http://test.navion.com.tr/rentoscar/page/read/frequently-asked-questions">FAQ</a></li>
+                    </ul>
+
+                    <ul class="fr">
+                        <li><strong>(+90) 392 815 22 72</strong></li>
+                        <li class="sp">  </li>
+                        <li><a href="#" class="facebook"></a></li>
+                        <li><a href="#" class="twitter"></a></li>
+                    </ul>
+                <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
             <div id="branding">
                 <div id="branding-content">
                     <div class="title-content">
 
 
                         <a href="<?php echo BASEPATH; ?>" title="<?php echo config::get('SITE_NAME');?>">
-                            <?php echo html::img( array('class'=>'site-logo', 'src'=>'images/logoOscarRentACar.png') ); ?>
+                            <?php echo html::img( array('class'=>'site-logo', 'src'=>'images/logo_white.png') ); ?>
                         </a>
 
                     </div>

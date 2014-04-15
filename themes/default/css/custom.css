@@ -209,12 +209,129 @@ input.orange_button{
 }
 
 #branding{
-    width: 100% !important;
+    margin-bottom: 10px;
+    background: #b01116;
 }
 
+.access-content a{
+    color: white !important;
+    border: 1px solid #b01116;
+}
+.access-content a:hover,
+.access-content .current_page_item a{
+    border: 1px solid white;
+    background: transparent !important;
+}
+
+
+.access-content ul ul a{
+    color: #b01116 !important;
+    border: 0 !important;
+}
+
+
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+
+
+#header_top{
+    background: white;
+}
+
+#header_top a{
+    padding: 5px 5px 0 5px;
+    font-size: 12px;
+    color: #444;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+#header_top strong{
+    padding: 5px 5px 0 5px;
+    font-size: 12px;
+    color: #444;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+#header_top .sp{
+    margin-top: 9px;
+    font-size: 15px;
+    width: 1px;
+    height: 13px;
+    background: #999;
+    font-weight: normal !important;
+}
+
+#header_top ul li{
+    float: left;
+}
 
 
 #slider-content{
     width: 940px !important;
 }
 
+#book_car a{
+    text-align: left !important;
+}
+
+#footer-menu{
+    background: #b01116 !important;
+    color: white !important;
+}
+
+#footer-menu .footer-widget-single h2, h3{
+    color: white !important;
+}
+
+
+.facebook{
+    background: url('../../../images/facebook.png') no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 15px !important;
+
+}
+
+.twitter{
+    background: url('../../../images/twitter.png') no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.site-title{
+    font-size: 13px !important;
+    font-family: arial;
+    width: 300px !important;
+    float: left !important;
+    padding: 0;
+    display: inline-block;
+    color: #999;
+
+}
+
+.company-name{
+    float: right;
+    margin-top: 8px !important;
+    font-size: 13px !important;
+    font-family: arial;
+}
+
+.footer-widget-single{
+    margin-left: 0 !important;
+    margin-right: 39px !important;
+}
+
+#footer{
+    margin-top: 25px;
+}

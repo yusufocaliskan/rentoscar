@@ -4,7 +4,7 @@
                     <div class="widget-area">
                         <div class="clear"></div>
 
-                        <div class="footer-widget-single" style="width: 250px;margin-left: 39px; margin-right: 20px">
+                        <div class="footer-widget-single" style="width: 250px; margin-right: 60px !important">
                             <h2 style="font-size: 16px; margin-top: 3px; color: #444c57; letter-spacing:-1.2px; margin-bottom: 10px"><?php echo settings::get()->defaultTitle?></h2>
                             <p>Oscar rentacar was established in 1958 and is the biggest and best and most reputable car hire company on the island, and is well known for very competetive ...<a href="<?php echo BASEPATH?>page/read/about-us"> read more</a> </p>
                         </div>
@@ -13,7 +13,7 @@
                             content: '';
                         }
                         </style>
-                        <div class="recent_tweets footer-widget-single">
+                        <div class="recent_tweets footer-widget-single" style="margin-right: 50px !important">
                             <h3>Recent &nbsp; News</h3>
 
                             <?php
@@ -48,9 +48,12 @@
             </footer><!--end:footer-->
 
         </div><!--end:conteiner-->
-               <div id="footer-content" style="height: 40px">
-                    <h1 class="site-title" style="font-size: 25px; width:100% "><?php echo settings::get()->defaultTitle?></h1>
-                    <div class="company-name">All rights reserved, &copy; Copyright <?php echo date('Y'); ?> - <?php echo settings::get()->defaultTitle;?></div>
+               <div >
+                    <div id="main">
+                        <p class="company-name">All rights reserved, &copy; Copyright <?php echo date('Y'); ?> - <?php echo settings::get()->defaultTitle;?></p>
+                        <p class="site-title">Powered By <a href="http://navion.com.tr">Navion Consulting</a></p>
+                        <div class="clear"></div>
+                    </div>
                 </div><!-- #footer-content -->
         <div id="overlay_block"></div>
 

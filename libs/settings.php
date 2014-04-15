@@ -83,7 +83,11 @@ class settings
 
                     $pageLink = $page->pageLink == '#' ? '#' : BASEPATH.'page/read/'.$page->pageLink;
 
-                    $display .=  '<li '. html::setCurrentMenu('','',$page->pageLink, $sideBar).'><a href="'.$pageLink.'">'.$page->pageTitle.'</a>';
+                    if($page->pageLink != 'term-conditions' AND $page->pageLink != 'frequently-asked-questions' )
+                    {
+                        $display .=  '<li '. html::setCurrentMenu('','',$page->pageLink, $sideBar).'><a href="'.$pageLink.'">'.$page->pageTitle.'</a>';
+                    }
+
 
 
                                 $subPage =  self::listAllMenu($page->pageId, true);
