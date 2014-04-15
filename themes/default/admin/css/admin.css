@@ -221,8 +221,38 @@ a.btn:hover{background: #C93D3D; }
         font-weight: bold;
         margin-top: 0px;
         margin-left: -4px;
-        }
+
     }
+
+
+
+.facebook{
+    background: url('../../../../images/facebook.png') no-repeat;
+    width: 18px;
+    height: 18px;
+    float: left;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 11px;
+
+}
+
+.twitter{
+    background: url('../../../../images/twitter.png') no-repeat;
+    width: 18px;
+    height: 18px;
+    float: left;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 11px;
+}
+
+
+
+
+
+
+
 
 
 

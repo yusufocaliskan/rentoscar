@@ -49,10 +49,25 @@
             <em>Slider'ın altında yer alan 3 ana başlık ve içeriklerini girin. Html tag kullanılabilir.</em>
         </div>
 
+        <div class="form_element">
+            <div>Facebook</div>
+            <i class="facebook"></i><input type="text"  style="font-size: 17px; width: 250px; float: left; padding: 10px 5px" value="<?php echo $this->settings->facebook?>" name="facebook" placeholder="Facebook Linki">
+             <p class="clear"></p>
+        </div>
+
+        <div class="form_element">
+            <div>Twitter</div>
+            <i class="twitter"></i><input type="text"  style="font-size: 17px; width: 250px; float: left; padding: 10px 5px" value="<?php echo $this->settings->twitter?>" name="twitter" placeholder="Twitter Linki">
+            <p class="clear"></p>
+        </div>
+
+
      <div class="form_element">
         <input type="submit" class="blue_button form-update btn-plus btn-blue btn-delete" value="Kaydet">
         <a class="blue_button btn-delete form-update btn-plus btn-red" href="<?php echo BASEPATH?>dashboard/" >Iptal</a>
-</div>
+    </div>
+
+
     </div>
 
 </div>

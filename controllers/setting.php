@@ -32,11 +32,13 @@ class  setting extends controller
             'siteEmail'=>'email',
             'sitePhone'=>'phone',
             'threeDayPriceRange'=>'',
-            'sliderBottom' =>''
+            'sliderBottom' =>'',
+            'facebook' =>'',
+            'twitter' =>''
 
         ));
 
-        extract( $this->post = input::pushInArray(array('siteTitle','minAge','maxAge','siteEmail','sitePhone','threeDayPriceRange','sliderBottom')) );
+        extract( $this->post = input::pushInArray(array('siteTitle','minAge','maxAge','siteEmail','sitePhone','threeDayPriceRange','sliderBottom','facebook','twitter')) );
 
         if($_POST)
         {

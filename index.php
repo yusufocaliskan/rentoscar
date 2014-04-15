@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * @author  : Yusuf Çalışkan <y.caliskan@navion.com.tr>
+ *
+ * Navion Consulting
+ */
     ob_start();
     header('Content-Type: text/html; charset=utf-8');
     define('OSCAR_RENT_A_CAR', true);
@@ -17,12 +21,17 @@
  *          - Şuanda el ile yükleniyor.
  *          - Wordpress'teki Media Mantığı ile yapabilabir.
  *
- *  TODO: Cache sistemi eklenmeli. Sistemin daha performanslı çalışması açısında iyi olacak.
- *          - Şuanda böyle bir durum yok.
+ *  TODO: Cache Mekanizması daha geliştirilebilir. Şuadan basit mantık ile çalışıyor.
+ *          - Tüm işlemi  controllers/theme methodunda yapıyor.
+ *          - Cache için dinamik alanlar oluşturulmalı ve tüm sayfalara uygunlanmalı.
+ *          - Smarty Önermiyorum
  *
  *  TODO: Çok dil sistemi eklenebilir.
  *          - Şuanki yapı buna müsait değil.
  *          - Sistemdeki başlıkların bir config, array veya .pa dosyasına atılabilir.
+ *
+ * TODO: SSL Kurulması lazım.
+ *
  */
 # ************************************************************************
 # ******************************* | end : TODO | *******************************

@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /app/
+Disallow: /cache/
+Disallow: /configs/
+Disallow: /controllers/
+Disallow: /langs/
+Disallow: /libs/
+Disallow: /model/
+Disallow: /shortcode/
+Disallow: /views/admin
+Disallow: /*.php$
+Disallow: /*.js$
+Disallow: /*.css$

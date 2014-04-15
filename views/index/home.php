@@ -44,9 +44,9 @@
                 </div>
                 <div id="slider-content">
 
-                <?php echo html::formOpen('Cars/firstStepChooseACar', array('class'=>'main-form','id'=>'slider-form','method'=>'GET','style'=>'margin-top:-120px')); ?>
+                <?php echo html::formOpen('Cars/firstStepChooseACar', array('class'=>'main-form','id'=>'slider-form','method'=>'GET','style'=>'margin-top:-135px')); ?>
                         <div class="main_form_navigation">
-                            <div id="book_car" class="title-form current" style="width: 100%"><a href="#" title="">Book a Car</a></div>
+                            <div id="book_car" class="title-form current" style="width: 100%"><a href="#" title="">Rent A Car</a></div>
                         </div>
                         <div id="book_car_content" class="content-form">
                             <div class="location-block">
@@ -108,15 +108,7 @@
                                 <input class="datepicker" type="text" name="data_to_1" />
                                 <input class="time-select" type="text" size="5" value="" name="time_to_1" />
                             </div>
-                            <div class="form-block car-type">
-                                <h4>Car type</h4>
-                                <div class="car-type-select">
-                                    <select class="select" name="select_cartype_1">
-                                        <option selected="selected" />Standard
-                                        <option />Mini
-                                    </select>
-                                </div>
-                            </div>
+
                             <div class="form-block form-submit">
                                 <input class="orange_button form-continue" type="submit" value="Continue" />
                             </div>
@@ -125,7 +117,7 @@
         <?php echo html::formClose(); ?>
 
             <div id="slider-front-img">
-                <img style="width: 250px;position: absolute;top: 90px;right: -250px;" src="images/xslider_front_img.png.pagespeed.ic.SXjiVO6hdp.png" alt="" />
+                <img style="width: 250px;position: absolute;top: 10px;right: -250px;" src="images/xslider_front_img.png.pagespeed.ic.SXjiVO6hdp2.png" alt="" />
             </div>
 
 

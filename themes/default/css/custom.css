@@ -20,7 +20,7 @@ input.orange_button{
 }
 
 .title-form.current{
-    border-top: 5px solid #df2f23 !important;
+    border-top: 5px solid #b01116 !important;
 }
 
 .page_body p{
@@ -237,6 +237,7 @@ input.orange_button{
 
 #header_top{
     background: white;
+    margin-bottom: -6px;
 }
 
 #header_top a{
@@ -249,7 +250,7 @@ input.orange_button{
     text-decoration: none;
 }
 
-#header_top strong{
+#header_top span{
     padding: 5px 5px 0 5px;
     font-size: 12px;
     color: #444;
@@ -334,4 +335,67 @@ input.orange_button{
 
 #footer{
     margin-top: 25px;
+}
+
+a.admin_panel{
+    margin-top: 27px;
+    color: #444;
+    padding: 3px 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #f2dab1;
+    margin-right: -100px;
+
+}
+
+a.admin_panel:hover{
+    text-decoration: none;
+    background: #d6c09e;
+}
+
+#secondary a{
+    color:  #b01116;
+    font-size: 13px !important;
+}
+
+.title-form.current a {
+color: #b01116;
+cursor: default;
+float: left;
+margin-left: 29px;
+font-size: 21px;
+padding-top: 8px;
+margin-bottom: -14px;
+}
+.home-page {
+    background: none  !important;
+    margin-top: -10px;
+}
+.home-page #secondary{
+    padding: 0;
+}
+
+.access-content{
+    float: right  !important;
+}
+
+.access-content a{
+    font-size: 15px !important;
+}
+
+input.orange_button{
+    -webkit-box-shadow: 0 1px 2px 0 #b01116 inset, inset 0 -15px 15px 0 #a41015 !important;
+    -moz-box-shadow: 0 1px 2px 0 #b01116 inset, inset 0 -15px 15px 0 #a41015 !important;
+    box-shadow: 0 1px 2px 0 #b01116 inset, inset 0 -15px 15px 0 #a41015 !important;
+}
+
+.form-block.form-submit input{
+    padding: 14px !important;
+}
+
+#footer{
+    margin-top: 10px !important;
+}
+.widget-title{
+    color: #444c57 !important;
 }

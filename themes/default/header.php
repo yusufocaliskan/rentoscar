@@ -28,16 +28,22 @@
             <div id="header_top">
                 <div id="main">
                     <ul class="fl">
+                        <li><a href="<?php echo BASEPATH?>">Home</a></li>
+                        <li class="sp">  </li>
                         <li><a href="http://test.navion.com.tr/rentoscar/page/read/term-conditions">Term & Conditions</a></li>
                         <li class="sp">  </li>
                         <li><a href="http://test.navion.com.tr/rentoscar/page/read/frequently-asked-questions">FAQ</a></li>
                     </ul>
-
+                <?php
+                    $mail = settings::get()->siteEmail;
+                ?>
                     <ul class="fr">
-                        <li><strong>(+90) 392 815 22 72</strong></li>
+                        <li><span><?php echo settings::get()->defaultPhone?></span></li>
                         <li class="sp">  </li>
-                        <li><a href="#" class="facebook"></a></li>
-                        <li><a href="#" class="twitter"></a></li>
+                        <li><a href="mailto:<?php echo $mail?>"><?php echo $mail?></a></li>
+                        <li class="sp">  </li>
+                        <li><a href="<?php echo settings::get()->facebook?>" class="facebook"></a></li>
+                        <li><a href="<?php echo settings::get()->twitter?>" class="twitter"></a></li>
                     </ul>
                 <div class="clear"></div>
                 </div>
@@ -48,8 +54,8 @@
                     <div class="title-content">
 
 
-                        <a href="<?php echo BASEPATH; ?>" title="<?php echo config::get('SITE_NAME');?>">
-                            <?php echo html::img( array('class'=>'site-logo', 'src'=>'images/logo_white.png') ); ?>
+                        <a href="<?php echo BASEPATH; ?>" title="<?php echo settings::get()->defaultTitle?>">
+                            <?php echo html::img( array('class'=>'site-logo', 'alt'=>settings::get()->defaultTitle, 'src'=>'images/logo_white.png') ); ?>
                         </a>
 
                     </div>

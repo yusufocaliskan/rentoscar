@@ -17,12 +17,14 @@ class setting_model extends model
                 siteEmail = ?,
                 defaultPhone = ?,
                 threeDayPriceRange = ?,
-                sliderBottom    = ?
+                sliderBottom    = ?,
+                facebook    = ?,
+                twitter    = ?
 
 
         ");
 
-        $update->execute(array($siteTitle,$maxAge,$minAge,$siteEmail,$sitePhone,$threeDayPriceRange,$sliderBottom));
+        $update->execute(array($siteTitle,$maxAge,$minAge,$siteEmail,$sitePhone,$threeDayPriceRange,$sliderBottom,$facebook,$twitter));
 
         if($update)
         {
