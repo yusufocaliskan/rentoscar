@@ -1,0 +1,35 @@
+#Siteyi sıkıştır. Gzip!
+SetOutputFilter DEFLATE
+
+php_flag display_errors on
+php_value error_reporting 9999
+
+
+Options -MultiViews
+Options +FollowSymLinks
+
+#Tüm 404 hatalarını index.php gönder
+
+ErrorDocument 404 /index.php
+
+
+
+
+<ifModule mod_rewrite.c>
+
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
+
+</ifModule>
+
+# 2 Saatliğine Cache'leme yap.
+<FilesMatch "\.(xml|txt|html|js|css)$">
+    ExpiresActive On
+
+    ExpiresDefault A2200
+    Header append Cache-Control "proxy-revalidate"
+</FilesMatch>

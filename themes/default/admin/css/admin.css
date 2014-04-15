@@ -1,0 +1,235 @@
+*{padding: 0; margin: 0;}
+body{font-size: 12px !important; font-family: arial !important; color: #444; background: #fefefe !important;}
+.wrapper{margin: 0 auto; width: 70%; }
+#header{border-bottom: 1px solid #ddd; padding: 15px 0; box-shadow: 0px 1px 10px #ddd; background: white;}
+a.btn, button.btn{
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff !important;
+	background: #E44444;
+	display: inline-block;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-top: 8px;
+	border: 0;
+	text-shadow: none !important;
+}
+.fl{float: left;}
+.fr{float: right;}
+
+
+a.btn:hover{background: #C93D3D; }
+.btn-green{ display: inline-block; background:green !important; margin-right: 10px; color: #fff !important;}
+.btn-blue{
+    background:#378eef !important;
+     color: #fff !important;
+     font-size: 14px !important;
+     padding: 8px 15px !important;
+    cursor:pointer;
+       margin-top: -3px;
+
+ }
+
+ .btn-red{
+    background:#D11111 !important;
+     color: #fff !important;
+     font-size: 14px !important;
+     padding: 8px 15px !important;
+    cursor:pointer;
+    display: inline-block;
+    text-decoration: none !important;
+
+ }
+.btn-red:hover{background:#BD0B0B !important;}
+ .btn-blue:hover{
+    background:#2979D3 !important
+ }
+  .btn-plus{
+        padding: 2px 12px;
+        position: relative;
+        text-decoration: none;
+        border: 0;
+        border-radius: 2px;
+        text-shadow: none;
+        font-weight: 600;
+        font-size: 13px;
+        display: inline-block;
+        -webkit-transition-property: border,background,color;
+        -moz-transition-property: border,background,color;
+        transition-property: border,background,color;
+        -webkit-transition-duration: .05s;
+        -moz-transition-duration: .05s;
+        transition-duration: .05s;
+        -webkit-transition-timing-function: ease-in-out;
+        -moz-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
+        background: #ddd;
+    }
+
+    .btn-plus:hover{
+        background: #aaa;
+    }
+
+
+#container{padding: 20px 0;}
+	.pageTitle{border-bottom: 1px solid #ddd;font-size: 23px;color: #888;text-align: center;}
+
+#footer{ color: #999; font-style: italic; padding: 15px 0; text-align: center;}
+
+.clear{
+    clear: both;
+}
+
+.img-icon{
+	width: 16px;
+	height:16px;
+	display: inline-block;
+	background:url("../img/icon308.png");
+	float: left;
+	margin-top: 15px;
+	margin-right: 20px;
+}
+
+.markImageForm input{
+	width: 89px;
+	margin-top: 10px;
+}
+.extraImageForm input{
+	width: 89px;
+	margin-top: 10px;
+}
+
+.control_menu{
+	list-style: none;
+	margin-right: 30px;
+	margin-top: 4px;
+}
+
+.control_menu > li{
+	float: left;
+	position: relative;
+}
+
+.control_menu > li >  a{
+	padding: 5px;
+	display: inline-block;
+	font-weight: bold;
+	color: #888;
+	margin-right: 5px;
+}
+.control_menu > li >  a:hover,
+.control_menu > li >  a.active{
+	text-decoration: underline;
+}
+
+.control_menu .sub_menu{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	top: 30px;
+	left: 3px;
+	border: 1px solid #ddd;
+	width: 150px;
+	background: #fff;
+	border-radius: 3px;
+	display: none;
+}
+.control_menu .sub_menu li{
+
+}
+.control_menu .sub_menu li:last-child a{
+	border-bottom: 0;
+}
+.control_menu .sub_menu li a{
+	border-bottom: 1px solid #ddd;
+	padding: 5px;
+	display: inline-block;
+	font-weight: bold;
+	color: #888;
+	margin-right: 5px;
+	width: 140px;
+}
+
+.control_menu .sub_menu li a:hover,
+.control_menu .sub_menu li a.active{
+	background: #fafafa;
+}
+.table tr td img{
+	width: 50px !important;
+}
+
+
+.row{}
+
+.row .colm{
+    padding: 20px;
+}
+
+
+.row .left{
+    width: 60%;
+    background: #f8f8f8;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    float: left;
+}
+
+.row .right{
+    width: 28%;
+    float: right;
+    background: #f8f8f8;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+
+   .form_element{
+        display: block;
+        clear: both;
+    }
+
+    .form_element input[type="text"],input[type="file"],select,textarea{
+        display: block;
+        width: 98%;
+
+    }
+
+    .form_element textarea{
+        width: 98%;
+        height: 300px;
+    }
+
+    .form_element > div{
+        font-size: 11px;
+        margin: 10px 0;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #888;
+        border-bottom: 1px dotted #ddd;
+    }
+
+
+    .form_element em{
+        color: #999;
+    }
+    h1{
+        color: #B1B1B1;
+        font-size: 50px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-left: -4px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
