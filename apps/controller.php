@@ -45,7 +45,19 @@ class controller
 
             #CACHE
             $cacheTime        =  isset($cache['cacheTime']) ? $cache['cacheTime'] : 15; //15 Saniye
-            $cacheFile        =  str_replace('/','_',$page).'_'.router::getParam(0).md5($page).'.html';
+
+            #Admin giriş yapmış ise admine özel cache Dosyası luştur
+            #TODO : Daha sonra bu nu tüm kullanıcılara özel yap. Eğer kullanıcı sistemi olacaksa.
+            if( auth::isLoggedIn() AND auth::isAdmin() )
+            {
+                $cacheFile        =  'admin_'.str_replace('/','_',$page).'_'.router::getParam(0).md5($page).'.html';
+            }
+
+            #Sıradan hernagi biris ise.
+            else{
+                $cacheFile        =  str_replace('/','_',$page).'_'.router::getParam(0).md5($page).'.html';
+            }
+
             $cachePath        =  ROOTPATH.'cache/'.$cacheFile;
 
             if(file_exists($cachePath) AND time() - $cacheTime < filemtime($cachePath))

@@ -263,7 +263,7 @@ class page extends controller
         #SAyfaya ait Bilgileri çek
         $this->pageDetail  = $this->model->pageDetail($pageTitle);
 
-        $this->theme('page/read',$this->pageDetail->pageTitle,'','',array('cache'=>false,'cacheTime'=>604800));
+        $this->theme('page/read',$this->pageDetail->pageTitle,'','',array('cache'=>true,'cacheTime'=>604800));
 
       }
 

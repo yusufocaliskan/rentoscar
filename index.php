@@ -4,7 +4,8 @@
  *
  * Navion Consulting
  */
-    ob_start();
+
+    if(!ob_start("ob_gzhandler")) ob_start();
     header('Content-Type: text/html; charset=utf-8');
     define('OSCAR_RENT_A_CAR', true);
 
@@ -47,6 +48,7 @@
     ini_set('display_errors', 'On');
 
 
+
 # ************************************************************************
 # CONFIGs
 # ************************************************************************
@@ -71,8 +73,13 @@
     #Session adnı değiştir..
     session_name(Config::get('SESSION_NAME'));
 
+
+
     #Session zamanı
     ini_set('session.gc_maxliftime',Config::get('SESSION_MAX_TIME'));
+    ini_set('session.use_cookies', 1);
+    ini_set('session.use_only_cookies', 1);
+
 
 
 

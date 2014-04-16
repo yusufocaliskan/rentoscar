@@ -1,1 +1,4 @@
-!cache
+raw
+*.sw?
+.DS_Store
+cache
