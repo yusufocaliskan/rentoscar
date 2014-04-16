@@ -15,8 +15,8 @@
                  <div id="slider-img">
                     <ul class="slides">
                         <?php
-                            $allNews = $this->newsModel->getAllSliderNews();
-                            foreach($allNews as $news):
+                            $this->allNews = $this->newsModel->getAllSliderNews();
+                            foreach($this->allNews as $news):
                         ?>
                             <li>
                     <?php if($news->showContent == 1):?>

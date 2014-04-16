@@ -57,7 +57,7 @@ class settings
                 pages
             WHERE
                 pageParent = ?
-            ORDER BY pageOrder ASC
+            ORDER BY pageOrder ASC, pageParent ASC
         ");
 
         $select->execute(array($ID));

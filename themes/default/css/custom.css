@@ -41,13 +41,13 @@ input.orange_button{
 }
 
 .page_body strong{
-    text-decoration: underline;
-    color: #666;
+    color: #b01116;
 }
 
 .page_body h2{
     margin-bottom: 10px;
-    font-size: 17px;
+    font-size: 15px;
+    color: #b01116;
 }
 
 #child_pages{
@@ -227,6 +227,7 @@ input.orange_button{
 .access-content ul ul a{
     color: #b01116 !important;
     border: 0 !important;
+    font-size: 13px !important;
 }
 
 
@@ -398,4 +399,26 @@ input.orange_button{
 }
 .widget-title{
     color: #444c57 !important;
+}
+
+.faq_nav li{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.faq_nav li a{
+    padding: 7px 10px !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #ddd;
+    display: block;
+}
+
+.faq_nav li ul {
+    background: #fefefe;
+    padding-left: 20px;
+}
+
+
+.faq_nav li ul li a{
+    border-bottom: none;
 }

@@ -121,7 +121,6 @@ class page_model extends model
      */
     public function pageDetail($pageLink)
     {
-
         $select = $this->DB->prepare("
             SELECT
                 *

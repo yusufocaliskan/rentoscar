@@ -35,14 +35,11 @@ input.form-update.orange_button{
     height: 80px !important;
 }
 
-.contact-info{
-    padding: 5px;
+.contact-info p{
+    margin-bottom: 4px;
+    width: 430px;
 }
 
-.contact-info p{
-    padding: 8px 0;
-    border-bottom: 1px dotted #aaa;
-}
 
 .google_map{
     border:4px solid #ddd;
@@ -109,26 +106,26 @@ if($_POST)
         <?php echo html::formOpen('page/read/contact-us')?>
 
         <div class="form-block" >
-            <p style="padding: 10px 0; text-align: center">We hope you will give us a call with any questions or comments but feel free to use the contact form below if you prefer.</p>
+            <p style="padding: 10px 0;">We hope you will give us a call with any questions or comments but feel free to use the contact form below if you prefer.</p>
         </div>
 
         <div class="form-block">
-            <div>Name</div>
+            <div><strong style="text-decoration: none">Name</strong></div>
             <input type="text" class="form-block" name="name" value="<?php echo input::get('name','s'); ?>">
         </div>
 
         <div class="form-block">
-            <div>E-mail</div>
+            <div><strong style="text-decoration: none">E-mail</strong></div>
             <input type="text" class="form-block" name="email"  value="<?php echo input::get('email','email'); ?>">
         </div>
 
         <div class="form-block">
-            <div>Subject</div>
+            <div><strong style="text-decoration: none">Subject</strong></div>
             <input type="text" class="form-block" name="subject" value="<?php echo input::get('subject','s'); ?>">
         </div>
 
         <div class="form-block">
-            <div>Message</div>
+            <div><strong style="text-decoration: none">Message</strong></div>
             <textarea name="message"><?php echo input::get('message',''); ?></textarea>
         </div>
 
@@ -141,6 +138,10 @@ if($_POST)
 
 
     <div class="lf contact-info" style="width: 400px">
+        <div class="google_map" style="margin-top: 10px; margin-bottom: 35px">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3254.8392944004922!2d33.329054!3d35.334812!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2s!4v1396447419406" width="400" height="300" frameborder="0" style="border:0"></iframe>
+        </div>
+
         <p><strong>Address</strong> : Oscar Car Rentals P.O.Box: 195 Girne Mersin 10 Turkey</p>
         <p><strong>Phone</strong> : (+90) 392 815 2272 - (+90) 392 815 5670</p>
         <p><strong>Fax</strong> : (+90) 392 815 3858</p>
@@ -151,9 +152,7 @@ if($_POST)
                 <a href="Ulupinar@oscargroup.co">Ulupinar@oscargroup.co</a></p>
 
 
-        <div class="google_map" style="margin-top: 35px">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3254.8392944004922!2d33.329054!3d35.334812!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2s!4v1396447419406" width="400" height="300" frameborder="0" style="border:0"></iframe>
-        </div>
+
     </div>
 
 

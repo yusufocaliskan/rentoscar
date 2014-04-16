@@ -34,7 +34,6 @@ class controller
             #Hata göster
             error::trigger('Bu dosya bozuk veya yolu yanlış.');
         }
-
         if(!$cache['cache'])
         {
             #Temayı çağır
@@ -45,9 +44,9 @@ class controller
         else{
 
             #CACHE
-            $cacheTime        = isset($cache['cacheTime']) ? $cache['cacheTime'] : 15; //15 Saniye
+            $cacheTime        =  isset($cache['cacheTime']) ? $cache['cacheTime'] : 15; //15 Saniye
             $cacheFile        =  str_replace('/','_',$page).'_'.router::getParam(0).md5($page).'.html';
-            $cachePath        = ROOTPATH.'cache/'.$cacheFile;
+            $cachePath        =  ROOTPATH.'cache/'.$cacheFile;
 
             if(file_exists($cachePath) AND time() - $cacheTime < filemtime($cachePath))
             {
