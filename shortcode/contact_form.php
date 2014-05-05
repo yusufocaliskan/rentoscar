@@ -19,7 +19,7 @@ textarea{
 }
 
 input.form-update.orange_button{
-    background: #f08643 !important;
+    background: #CC0F0F !important;
 }
 .recaptcha_theme_red #recaptcha_response_field{
     padding: 0 4px !important;

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,7 +6,8 @@
         <?php echo Html::style(array('rel'=>'shortcut icon', 'type'=>'image/x-icon','href'=>'images/favicon.ico')); ?>
         <?php echo Html::meta(array('name'=>'view','content'=>'width=device-width, initial-scale=1')); ?>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-        <?php echo Html::style(array('href'=>Config::get('DEFAULT_CURRENT_THEME') .'css/A.jquery-ui.css.pagespeed.cf.l5rE7WgkMu.css','media'=>'all','type'=>'text/css', 'rel'=>'stylesheet')); ?>
+        <?php echo Html::style(array('href'=>Config::get('DEFAULT_CURRENT_THEME') .'js/js-ui/css/blitzer/jquery-ui-1.10.4.custom.min.css','media'=>'all','type'=>'text/css', 'rel'=>'stylesheet')); ?>
+        <?php echo Html::style(array('href'=>Config::get('DEFAULT_CURRENT_THEME') .'js/jquery-timepicker/jquery.timepicker.css','media'=>'all','type'=>'text/css', 'rel'=>'stylesheet')); ?>
         <?php echo Html::style(array('href'=>Config::get('DEFAULT_CURRENT_THEME') .'css/A.style.css.pagespeed.cf.yVD6J361ZW.css','media'=>'all','type'=>'text/css', 'rel'=>'stylesheet')); ?>
         <?php echo Html::style(array('href'=>Config::get('DEFAULT_CURRENT_THEME') .'css/A.jquery.slider.min.css.pagespeed.cf.mLNjgcgeJ6.css','media'=>'all','type'=>'text/css', 'rel'=>'stylesheet')); ?>
         <?php echo Html::style(array('href'=>Config::get('DEFAULT_CURRENT_THEME') .'css/custom.css','media'=>'all','type'=>'text/css', 'rel'=>'stylesheet')); ?>

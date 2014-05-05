@@ -60,7 +60,8 @@
 
         <?php echo Html::script(array('src'=>Config::get('DEFAULT_CURRENT_THEME').'js/jquery-1.10.1.min.js.pagespeed.jm.hJPIhFzu5k.js')); ?>
         <?php echo Html::script(array('src'=>Config::get('DEFAULT_CURRENT_THEME').'js/jquery-migrate-1.2.1.min.js.pagespeed.jm.mhpNjdU8Wl.js')); ?>
-        <?php echo Html::script(array('src'=>Config::get('DEFAULT_CURRENT_THEME').'js/jquery-ui.js.pagespeed.jm.7bkf_uwmVN.js')); ?>
+        <?php echo Html::script(array('src'=>Config::get('DEFAULT_CURRENT_THEME').'js/js-ui/jquery-ui-1.10.4.custom.min.js')); ?>
+        <?php echo Html::script(array('src'=>Config::get('DEFAULT_CURRENT_THEME').'js/jquery-timepicker/jquery.timepicker.min.js')); ?>
 
 
         <!--[if IE]>
@@ -95,6 +96,8 @@
               $('.btn-delete').click(function() {
                 return window.confirm("Are you sure?");
             });
+
+              $('.time-select').timepicker();
           }())
     </script>
     </body>
