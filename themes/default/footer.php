@@ -97,8 +97,19 @@
                 return window.confirm("Are you sure?");
             });
 
-              $('.time-select').timepicker();
-          }())
+
+                $('.time-select').timepicker({
+                    'timeFormat': 'H:i',
+                    'closeOnWindowScroll':true,
+                    'scrollDefaultNow':true,
+                    'typeaheadHighlight':true
+                });
+
+                $('.datepicker').click(function(){
+                     $('.time-select').timepicker('hide');
+                });
+
+                }())
     </script>
     </body>
 </html>
